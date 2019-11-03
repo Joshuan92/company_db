@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/employees', 'Api\EmployeeController@index');
+
+Route::get('/departments', 'Api\DepartmentController@index');
+
+Route::get('/employees-departments', 'Api\EmployeeController@show');
